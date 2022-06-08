@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=<di>  initial-scale=1.0"/>
+    <title>Document</title>
+    <style>
+        .container{
+            width: 300px;
+            margin: auto;
+        }
+
+        input {
+            width: 100%;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="conteiner">
+        <label>Descrição</label>
+        <input type="text" id="descricao" placeholder="Informe descrição do produto" />
+
+        <label>Preço</label>
+        <input type="text" id="preco" placeholder="Informe descrição do produto" />
+        
+
+        <label>Estoque</label>
+        <input type="text" id="estoque" 
+        placeholder="Informe descrição do produto" />
+        <div>
+            <button onclick="add()">Salvar</button>
+            <button onclick="limpar()">Limpar</button>
+
+        </div>
+        <table>
+            <thead>
+                <tr>
+                    <th>Descrição</th>
+                    <th>Preço</th>
+                    <th>Estoque</th>
+                </tr>
+            </thead> 
+            <tbody id="dados">
+
+            </tbody>           
+        </table>
+    </div>
+    <script>
+       var produtos = []
+
+       function add(){
+           // validar se dados foram inseridos
+
+           //atribuir valores para o objeto
+           var obj = {
+            descricao:
+            document.getElementById("descricao").value,
+            preco:
+            document.getElementById("preco").value,
+            estoque:
+            document.getElementById("estoque").value
+           }
+
+           if(obj.descricao == ''){
+               alert("Insira seu item")
+               return
+
+           }
+
+           if(obj.preco == ''){
+               alert("Informe o Valor")
+               return
+
+           }
+
+           if(obj.estoque == ''){
+               alert("Informe a quantidade")
+               return
+
+           }
+
+           // colocar objeto no array produtos
+           produtos.push(obj)
+           console.log(produtos)
+           
+    }
+
+    function limpar(){
+           document.getElementById("descricao").value = ""
+           document.getElementById("preco").value = ""
+           document.getElementById("estoque").value = ""
+           
+        }
+ 
+
+
+    
+    </script>
+
+
+</body>
+</html>

@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input id="numero" type="number" placeholder="Informe um numero" /> 
+    <button  onclick="comparar()">Informar</button> <br>
+
+    <p id="resultado"></p>
+
+    <script>
+        function comparar(){
+
+            var numero = document.getElementById("numero").value
+
+            var msg = "impar"
+
+            if(numero % 2 == 0){
+                msg = "par"
+            }
+
+            document.getElementById("resultado").innerHTML = `Seu numero é: ${msg}`
+
+        }
+        
+
+
+    </script>
+    
+</body>
+</html>

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input type="number" id="numero" placeholder="Informe um numero" /> <br>
+    <button onclick="calcular()">Calcular</button>
+    <p id="resultado"></p>
+
+    <script>
+        function calcular () {
+            var numero = 0
+            var resultado = 0
+
+            numero = document.getElementById("numero").value 
+
+           for(let i = 0; i <= numero; i++){
+               resultado = resultado + i
+           }
+
+
+             document.getElementById("resultado").innerHTML = `Seu numero é: ${resultado}` 
+        }
+    </script>
+
+</body>
+</html>

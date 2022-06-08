@@ -1,0 +1,32 @@
+{
+    "clientes": [
+        {
+
+            "id":1,
+            "nome":"José da silva",
+            "email": "jose@gmail.com",
+            "fone":"123-45678"
+
+        },
+
+        {
+
+            "id":2,
+            "nome":"Maria da silva",
+            "email": "Maria@gmail.com",
+            "fone":"456-45678"
+
+        }
+    ],
+    
+    "produtos": [
+        {
+        "feijao": 1,
+        "acucar": 1,
+        "cafe": 2
+
+
+        }
+
+    ]
+}

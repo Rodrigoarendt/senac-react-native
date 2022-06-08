@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var carro = {
+            marca: "ford",
+            modelo: "ka",
+            ano: 2020,
+            cor: "vermelho"
+        }
+
+        console.log(carro)
+
+        /*para entregar como string */
+
+        var stringcarro = JSON.stringify(carro)
+        console.log(stringcarro)
+        localStorage.setItem("carro", stringcarro)
+
+        /*converte string JASON para Obj JS */
+        var objcarro = JSON.parse(stringcarro)
+        console.log(objcarro)
+        console.log(objcarro.marca)
+        console.log(objcarro.cor)
+
+        var venda = {
+            data: "30/05/2022",
+            cliente:{
+                id: 1,
+                nome: "rodrigo",
+                endereco: "Pomerode"
+            },
+            itens:[
+                {
+                  id: 10,
+                  descricao: 'Milho',
+                  preco: 10,
+                  quantidade: 20
+                }
+            ]
+            
+        }
+
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <button onclick="load()">Pesquisar</button>
+    <table>
+        <thead>
+            <tr>
+              <th>id</th>
+              <th>nome</th>
+              <th>telefone</th>
+              <th>email</th>
+              
+            </tr>
+        </thead>
+        <tbody id="print">
+
+
+        </tbody>
+    </table>
+    <script>
+        function load(){
+            fetch("http://localhost:3000/clientes")
+            .then(x => x.json())
+            .then(y => display(y))
+        }
+
+        function display(dados){
+            var tabela = ""
+            for(let i = 0; i < dados.length ; i++){
+                tabela += `<tr>
+                    <td>${dados[i].id}</td>
+                    <td>${dados[i].nome}</td>
+                    <td>${dados[i].email}</td>
+                    <td>${dados[i].fone}</td>
+                    
+                    
+                    </tr>`
+            }
+            document.getElementById("print").innerHTML = tabela
+        } 
+
+        
+    </script>
+</body>
+</html>

@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input id="n1" type="text" placeholder="Informe Numero" />
+    <button onclick="show()">Clique aqui</button>
+    <hr>
+    <p id="p1"></p>
+    <script>
+        function show() {
+            var z = document.getElementById("n1").value
+            document.getElementById("p1").innerHTML = ""
+            while (z > 0) {
+                document.getElementById("p1").innerHTML += `<br> linha ${z}`
+                z--
+            }
+        }
+       
+    </script>
+</body>
+</html>

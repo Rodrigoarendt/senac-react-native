@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input id="pessoas" type="number" placeholder="Quantidade de pessoas"/> <br>
+    <input id="gramas" type="number" placeholder="Gramas por pessoa"/> <br>
+    <input id="carne" type="text" placeholder="Descrição do Item"/> <br>
+    <input id="preco" type="number" placeholder="Preço"/> <br>
+    <button  onclick="calcular()">Valor</button> <br>
+    <p id="calcular"></p>
+
+    <script>
+        
+        function calcular() {
+
+
+            var pessoas = parseFloat(document.getElementById("pessoas").value)
+            var gramas = parseFloat(document.getElementById("gramas").value)
+            var preco = parseFloat(document.getElementById("preco").value)
+            var carne = document.getElementById("carne").value
+            var precoTotal
+            var pesoTotal
+
+            var pesoTotal = ((pessoas * gramas)/100)
+            var precoTotal = (pesoTotal * preco) 
+
+            taxa = (precoTotal /100)
+            var taxaFinal = precoTotal*(10/100)
+
+            document.getElementById("calcular").innerHTML = ` O total de pessoas ${pessoas} vão comer ${gramas} de ${carne} que custará ${preco}`
+
+           
+        
+
+
+        }
+    </script>
+
+    
+</body>
+</html

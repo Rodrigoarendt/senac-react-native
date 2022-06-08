@@ -1,0 +1,56 @@
+* {
+    box-sizing: border-box;
+  }
+
+body{
+    margin: 0;
+    background-color: #333333;
+}
+
+.containerprincipal{
+    background-color: blue; 
+    height: 8vh; 
+    display: flex;
+    align-items: center; 
+    justify-content: space-between;
+}
+
+.containerlogo{
+  
+}
+
+.menucontainer{
+   justify-content: space-between; 
+}
+
+.containeradm{
+   justify-content: space-around;       
+}
+
+.btlogin{
+  margin: 10px;
+}
+
+.menucontainer a{
+    color: white;
+    text-decoration: none;
+    margin-left: 10px;
+    background-color: chocolate;    
+    border-radius: 10px;    
+    padding: 5px;
+}
+
+iframe{
+    width: 100vw;
+    height: 83vh;
+    border: 0px;
+}
+
+.rodape{
+    background-color: #333;
+    height: 7vh;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

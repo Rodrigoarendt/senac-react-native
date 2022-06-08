@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <label for="">Digite uma fruta</label>
+        <input type="text" id="frutas" />
+
+    <button onclick="salvar()">Salvar</button>
+    <script>
+        var salada = []
+        function salvar(){
+           var fruta = document.getElementById("frutas").value
+
+           salada.push(fruta)
+           console.log(salada)
+           localStorage.setItem("frutas", salada)
+        }
+    </script>
+</body>
+</html>

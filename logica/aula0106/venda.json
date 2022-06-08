@@ -1,0 +1,28 @@
+{
+    "venda": [
+        {
+            "DataVenda": "30/05/2022",
+            "Cliente": {
+                "id": 1,
+                "nome": "Rodrigo Arendt",
+                "Endereco": "Pomerode"
+            },
+            "itens": [
+                {
+                    "Cod": 10,
+                    "Descricao": "Carne",
+                    "Preco": 75,
+                    "Quantidade": 15
+                },
+                {
+                    "Cod": 20,
+                    "Descricao": "Cebola",
+                    "Preco": 25,
+                    "Quantidade": 150
+                }
+            ]
+        }
+        
+    ]
+}
+
