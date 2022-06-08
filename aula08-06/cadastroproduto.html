@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container {
+            width: 400px;
+            margin: auto;
+            padding: 5px;
+        }
+
+        input{
+            width: 100%;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <label for="descricao">Descrição</label>
+        <input type="text" id="descricao" placeholder="Informe Produto" />
+
+        <label for="quantidade">Quantidade</label>
+        <input type="text" id="quantidade" placeholder="Informe Quantidade" />
+
+        <label for="preco">Preco</label>
+        <input type="text" id="preco" placeholder="Informe Preço" />
+
+        <div>
+            <button onclick="salvar()">Salvar</button>
+            <button>Cancelar</button>
+        </div>
+    </div>
+    <script>
+        function salvar(){
+            const produto = {
+                descricao: "",
+                quantidade: "",
+                preco: ""
+            }
+            
+           produto.descricao = document.getElementById("descricao").value
+           produto.quantidade = document.getElementById("quantidade").value
+           produto.preco = document.getElementById("preco").value
+
+    
+
+           if (produto.descricao == ""){
+               alert("Informe Produto")
+           }
+
+           else if (produto.quantidade == ""){
+               alert("Informe Quantidade")
+           }
+
+           else if (produto.preco == ""){
+               alert("Informe o Preço")
+           }
+
+           const options = {
+               method: 'Post',
+               headers: {'Content-Type': 'application/json'},
+               body: JSON.stringify(produto)
+           }
+
+            fetch("http://localhost:3000/produto", options)
+           .then(data => data.JSON())
+           .then(pro => console.log(pro))
+        }
+    </script>
+
+</body>
+
+</html>

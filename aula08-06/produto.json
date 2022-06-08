@@ -1,0 +1,10 @@
+{
+  "produto": [
+    {
+      "descricao": "feijao",
+      "quantidade": "10",
+      "preco": "50",
+      "id": 1
+    }
+  ]
+}
