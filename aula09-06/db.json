@@ -1,16 +1,52 @@
 {
   "clientes": [
     {
-      "nome": "andre",
-      "email": "andre.arendt@hotmail.com",
-      "fone": "044-351515",
-      "id": 8
+      "nome": "rodrigo",
+      "email": "rodrigo.arendt@hotmail.com",
+      "fone": "150",
+      "id": 1
     },
     {
-      "nome": "jose",
-      "email": "andre.arendt@hotmail.com",
-      "fone": "044-351515",
-      "id": 9
+      "nome": "rodrigo",
+      "email": "rodrigo.arendt@hotmail.com",
+      "fone": "150",
+      "id": 2
+    },
+    {
+      "nome": "rodrigo",
+      "email": "rodrigo.arendt@hotmail.com",
+      "fone": "150",
+      "id": 3
+    },
+    {
+      "nome": "rodrigo",
+      "email": "rodrigo.arendt@hotmail.com",
+      "fone": "150",
+      "id": 4
+    },
+    {
+      "nome": "rodrigo",
+      "email": "rodrigo.arendt@hotmail.com",
+      "fone": "150",
+      "id": 5
+    },
+    {
+      "nome": "rodrigo",
+      "email": "rodrigo.arendt@hotmail.com",
+      "fone": "150",
+      "id": 6
+    },
+    {
+      "nome": "rodrigo",
+      "email": "rodrigo.arendt@hotmail.com",
+      "fone": "150",
+      "id": 7
+    },
+    {
+      "nome": "rodrigo",
+      "email": "rodrigo.arendt@hotmail.com",
+      "fone": "150",
+      "id": 8
     }
   ]
 }
